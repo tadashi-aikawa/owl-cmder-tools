@@ -4,10 +4,12 @@ owl-cmder
 Support tools for cmder 🦉
 
 
+
 Prerequirements
 ---------------
 
 * [Cmder](http://cmder.net/)
+* Use `cmd.exe` (Not bash!)
 
 
 Amazing powerline
