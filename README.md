@@ -13,7 +13,7 @@ Prerequirements
 Amazing powerline
 -----------------
 
-![Image](./powerline_image.png)
+![Image](./powerline.png)
 
 ### Prerequirements
 
