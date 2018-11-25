@@ -41,6 +41,8 @@ Useful commands
 | gc      | [fzf]          |                                                 |
 | gcr     | [fzf]          |                                                 |
 | r       | [fzf]          |                                                 |
+| vimd    | [fzf], [fd]    |                                                 |
+| vimf    | [fzf], [fd]    |                                                 |
 
 [fd]: https://github.com/sharkdp/fd
 [fzf]: https://github.com/junegunn/fzf
@@ -75,3 +77,11 @@ Checkout remote branch with interactive fzf interface. (git)
 ### r
 
 Search history with interactive fzf interface.
+
+### vimd
+
+Open a directory under the current ones by vim with interactive fzf interface.
+
+### vimf
+
+Open files under the current directory by vim with interactive fzf interface.
