@@ -13,9 +13,7 @@ Prerequirements
 Amazing powerline
 -----------------
 
-### Demo
-
-TODO
+![Image](./powerline_image.png)
 
 ### Prerequirements
 
