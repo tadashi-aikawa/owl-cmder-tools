@@ -66,9 +66,15 @@ Move to under the current directory with interactive fzf interface.
 
 Move to the directory visited recently with interactive fzf interface. 
 
+![Image](./cdz.gif)
+
+
 ### gc
 
 Checkout local branch with interactive fzf interface. (git)
+
+![Image](./gc.gif)
+
 
 ### gcr
 
