@@ -25,6 +25,14 @@ Amazing powerline
 Copy `config/powerline_git.lua` to `%cmder_root%/config/`
 
 
+Always show home directory as `~`
+---------------------------------
+
+### Install
+
+Copy `config/powerline_prompt.lua` to `%cmder_root%/config/`
+
+
 Useful commands
 ---------------
 
