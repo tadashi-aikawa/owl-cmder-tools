@@ -14,7 +14,7 @@ Prerequirements
 Amazing powerline
 -----------------
 
-![Image](./powerline.png)
+![Image](./docs/powerline.png)
 
 ### Prerequirements
 
@@ -52,28 +52,28 @@ Useful commands
 
 Move to git repositories with interactive fzf interface.
 
-![Image](./cdg.gif)
+![Image](./docs/cdg.gif)
 
 
 ### cdr
 
 Move to under the current directory with interactive fzf interface.
 
-![Image](./cdr.gif)
+![Image](./docs/cdr.gif)
 
 
 ### cdz
 
 Move to the directory visited recently with interactive fzf interface. 
 
-![Image](./cdz.gif)
+![Image](./docs/cdz.gif)
 
 
 ### gc
 
 Checkout local branch with interactive fzf interface. (git)
 
-![Image](./gc.gif)
+![Image](./docs/gc.gif)
 
 
 ### gcr
