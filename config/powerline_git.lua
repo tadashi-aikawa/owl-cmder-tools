@@ -169,7 +169,7 @@ local function init()
     segmentStaged.isNeeded = add_staged ~= 0 or modify_staged ~= 0 or delete_staged ~= 0 or rename ~= 0
     if segmentStaged.isNeeded then
         -- Staged
-        segmentStaged.text = " ⚑ "
+        segmentStaged.text = " 🚩 "
         segmentStaged.textColor = segmentColors.clean.text
         segmentStaged.fillColor = segmentColors.clean.fill
         if add_staged ~= 0 then
