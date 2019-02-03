@@ -122,7 +122,7 @@ local function init()
     if not segment.isNeeded then
         return
     end
-    
+
     local branch = get_git_branch(git_dir)
     if not branch then
         return
@@ -142,9 +142,9 @@ local function init()
         segment.fillColor = segmentColors.conflict.fill
         if plc_git_conflictSymbol then
             segment.text = segment.text..plc_git_conflictSymbol
-        end 
+        end
         return
-    end 
+    end
     if add ~= 0 then
         segment.textColor = segmentColors.dirtyLocal.text
         segment.fillColor = segmentColors.dirtyLocal.fill
@@ -169,7 +169,7 @@ local function init()
     segmentStaged.isNeeded = add_staged ~= 0 or modify_staged ~= 0 or delete_staged ~= 0 or rename ~= 0
     if segmentStaged.isNeeded then
         -- Staged
-        segmentStaged.text = " 🚩 "
+        segmentStaged.text = " ↗ "
         segmentStaged.textColor = segmentColors.clean.text
         segmentStaged.fillColor = segmentColors.clean.fill
         if add_staged ~= 0 then
@@ -211,22 +211,22 @@ local function init()
             segmentRemote.text = segmentRemote.text.."↑"..behind.." "
         end
     end
-end 
+end
 
 ---
 -- Uses the segment properties to add a new segment to the prompt
 ---
 local function addAddonSegment()
     init()
-    if segment.isNeeded then 
+    if segment.isNeeded then
         addSegment(segment.text, segment.textColor, segment.fillColor)
-    end 
-    if segmentStaged.isNeeded then 
+    end
+    if segmentStaged.isNeeded then
         addSegment(segmentStaged.text, segmentStaged.textColor, segmentStaged.fillColor)
-    end 
-    if segmentRemote.isNeeded then 
+    end
+    if segmentRemote.isNeeded then
         addSegment(segmentRemote.text, segmentRemote.textColor, segmentRemote.fillColor)
-    end 
-end 
+    end
+end
 
 clink.prompt.register_filter(addAddonSegment, 61)
