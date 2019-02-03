@@ -54,11 +54,14 @@ local function init()
     -- If a Git repo is active, it will only show the folder name
     -- This helps users avoid having a super long prompt
         local git_dir = get_git_dir()
-        if plc_prompt_useHomeSymbol and string.find(cwd, clink.get_env("HOME")) then 
+        -- a = cwd
+        -- b = clink.get_env("HOME")
+        homedir = string.gsub(clink.get_env("HOME"), "%-", "%%-")
+        if plc_prompt_useHomeSymbol and string.find(cwd, homedir) then 
             -- in both smart and full if we are in home, behave like a proper command line
-            cwd = string.gsub(cwd, clink.get_env("HOME"), plc_prompt_homeSymbol)
+            cwd = string.gsub(cwd, homedir, plc_prompt_homeSymbol)
         end 
-        if git_dir ==nil then 
+        if git_dir == nil then 
             -- either not in home or home not supported then check the smart path
             if plc_prompt_type == promptTypeSmart then
                 if git_dir then
