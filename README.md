@@ -41,20 +41,22 @@ Useful commands
 * Add `bin` to your Path environment variable
 * Install some tools
 
-| Command | Required Tools |                Advanced settings                |
-| ------- | -------------- | ----------------------------------------------- |
-| cdg     | [fzf], [gowl]  |                                                 |
-| cdr     | [fzf], [fd]    |                                                 |
-| cdz     | [fzf]          | Copy `config/cdz.lua` to `%cmder_root%/config/` |
-| gc      | [fzf]          |                                                 |
-| gcr     | [fzf]          |                                                 |
-| r       | [fzf]          |                                                 |
-| vimd    | [fzf], [fd]    |                                                 |
-| vimf    | [fzf], [fd]    |                                                 |
+| Command |       Required Tools        |                Advanced settings                |
+| ------- | --------------------------- | ----------------------------------------------- |
+| cdg     | [fzf], [gowl]               |                                                 |
+| cdr     | [fzf], [fd]                 |                                                 |
+| cdz     | [fzf]                       | Copy `config/cdz.lua` to `%cmder_root%/config/` |
+| gc      | [fzf]                       |                                                 |
+| gcr     | [fzf]                       |                                                 |
+| r       | [fzf]                       |                                                 |
+| vimd    | [fzf], [fd]                 |                                                 |
+| vimf    | [fzf], [fd]                 |                                                 |
+| iresize | [IrfanView] (64bit version) |                                                 |
 
 [fd]: https://github.com/sharkdp/fd
 [fzf]: https://github.com/junegunn/fzf
 [gowl]: https://github.com/tadashi-aikawa/gowl
+[IrfanView]: https://www.irfanview.net
 
 ### cdg
 
@@ -72,7 +74,7 @@ Move to under the current directory with interactive fzf interface.
 
 ### cdz
 
-Move to the directory visited recently with interactive fzf interface. 
+Move to the directory visited recently with interactive fzf interface.
 
 ![Image](./docs/cdz.gif)
 
@@ -99,3 +101,15 @@ Open a directory under the current ones by vim with interactive fzf interface.
 ### vimf
 
 Open files under the current directory by vim with interactive fzf interface.
+
+### iresize
+
+Resize images.
+
+When you have `sample1.png` and `sample2.png` which sizes are `w480*h360`, and if you execute the following commands... then
+
+|          Command          |                               Result                               |
+| ------------------------- | ------------------------------------------------------------------ |
+| `iresize 240 sample1.png` | Change size of `sample1.png`to `w240*h180`                         |
+| `iresize 240 *.png`       | Change size both of `sample1.png` and `sample2.png` to `w240*h180` |
+| `iresize 1280 *.png`      | Nothing to change                                                  |
